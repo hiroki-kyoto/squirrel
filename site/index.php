@@ -91,7 +91,7 @@ class wechatCallbackapiTest
         switch ($object->Event)
         {
             case "subscribe":
-                $content = "感谢您关注我们的微信平台！松鼠团队会一如既往为您竭诚服务！";
+                $content = "感谢您关注我们的微信平台！松鼠团队会竭诚为您服务！";
                 $content .= (!empty($object->EventKey))?("\n来自二维码场景 ".str_replace("qrscene_","",$object->EventKey)):"";
                 break;
             case "unsubscribe":
